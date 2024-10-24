@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Data Breach Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Email Data Breach Checker</h1>
+        <p>Check if your email has been exposed in known data breaches.</p>
+
+        <div class="form-group">
+            <input type="email" id="emailInput" placeholder="Enter your email" required>
+            <button onclick="checkBreach()">Check Breach</button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <div class="security-tips" id="securityTips"></div>
+
+    <footer>
+        <p>Developed by ARK</p>
+    </footer>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="popupMessage"></span>
+            <button id="closePopup" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
